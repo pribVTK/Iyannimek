@@ -239,6 +239,11 @@ async function DashboardPage() {
       </div>
     </section>
   );
+  } catch (error) {
+    console.error("Dashboard Error:", error);
+    // Redirect to sign in on any error
+    redirect("/api/auth/signin");
   }
+}
 
 export default DashboardPage;
