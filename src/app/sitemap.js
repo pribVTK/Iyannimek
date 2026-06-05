@@ -1,6 +1,6 @@
 // /src/app/sitemap.js (Hanya untuk halaman statis)
 
-const BASE_URL = 'https://iyannimekprbd.vercel.app'; 
+const BASE_URL = 'https://iyannimek-4i5w.vercel.app'; 
 
 export default function sitemap() {
   return [
