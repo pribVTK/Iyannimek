@@ -8,18 +8,18 @@ import Image from 'next/image';
 async function getGenres() {
   try {
     const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-    const response = await fetch(`${apiUrl}/genres`, {
+    const response = await fetch(`${apiUrl}/genre`, {
       next: { revalidate: 86400 } // Cache for 24 hours
     });
     
     if (!response.ok) {
-      throw new Error('Gagal mengambil data genres');
+      throw new Error('Gagal mengambil data genre');
     }
     
     const result = await response.json();
     return result.genres || [];
   } catch (error) {
-    console.error("Error fetching genres:", error);
+    console.error("Error fetching genre:", error);
     return [];
   }
 }
