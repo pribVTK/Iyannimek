@@ -29,7 +29,7 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: `${BASE_URL}/genres`, // Genre
+      url: `${BASE_URL}/genre`, // Genre
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
