@@ -6,8 +6,6 @@ import Link from "next/link";
 import BreadcrumbNavigation from "@/app/components/BreadcrumbNavigation";
 import prisma from "@/app/libs/prisma";
 
-export const dynamic = "force-dynamic";
-
 // Helper function untuk get badge berdasarkan level
 function getLevelBadge(level) {
   if (level >= 13) return "Ota-King";        // 12+ jam (720+ menit) - MAX TIER
