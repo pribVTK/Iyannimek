@@ -1,4 +1,8 @@
 // app/dashboard/page.jsx
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 import Image from "next/image";
 import { AuthUserSession } from "@/app/libs/auth-libs";
 import { redirect } from "next/navigation";
